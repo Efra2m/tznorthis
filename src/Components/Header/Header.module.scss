@@ -1,0 +1,22 @@
+.formContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #00838f;
+  padding: 10px 32px;
+  height: 80px;
+}
+
+.MuiTextField-root {
+  width: 70%;
+  width: 600px;
+  margin-right: 10px;
+}
+
+.inputCustom {
+  width: 912px;
+  height: 40px;
+  background: #f2f2f2;
+  border-radius: 4px;
+  opacity: 1;
+}

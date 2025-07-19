@@ -1,0 +1,101 @@
+.tableWrapper {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  overflow-x: auto;
+}
+
+.tableTitle {
+  padding: 16px;
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #333;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.responsiveTable {
+  width: 100%;
+
+  .tableHeader {
+    font-weight: 600;
+    white-space: nowrap;
+    padding: 12px 16px;
+  }
+
+  .tableRow {
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.04);
+    }
+  }
+
+  .nameCell {
+    max-width: 200px;
+    white-space: normal;
+    word-break: break-word;
+  }
+}
+.mobileList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.mobileItem {
+  padding: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: #f5f5f5;
+  }
+
+  &.selected {
+    background-color: #e3f2fd;
+    border-left: 3px solid #1976d2;
+  }
+}
+
+.mobileRow {
+  display: flex;
+  margin-bottom: 8px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .label {
+    font-weight: 500;
+    min-width: 80px;
+    color: #666;
+    width: 40px;
+  }
+
+  .value {
+    word-break: break-word;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .responsiveTable {
+    .tableHeader,
+    .tableRow > td {
+      padding: 8px 12px;
+      font-size: 0.875rem;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .tableWrapper {
+    padding: 8px;
+  }
+
+  .tableTitle {
+    padding: 12px 8px;
+    font-size: 1.25rem;
+  }
+}
