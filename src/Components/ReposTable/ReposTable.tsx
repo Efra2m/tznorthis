@@ -23,7 +23,9 @@ interface ReposTableProps {
   onRowClick: (repo: GitHubRepo) => void;
   selectedRepoId: number | null;
 }
-
+/**
+ * Таблица с репозиториями по запросу
+ */
 export const ReposTable = ({
   items,
   sortField,

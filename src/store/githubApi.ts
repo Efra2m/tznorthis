@@ -7,22 +7,22 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 export interface GitHubRepo {
-  id: number; // id  репозитория
-  name: string; //название репозитория
+  id: number; // Id  репозитория
+  name: string; //Название репозитория
   full_name: string; //Полное название
   description: string | null; //  Описание репозитория
-  language: string | null; // язык программирования
+  language: string | null; // Язык программирования
   stargazers_count: number; // Кол-во звезд
   forks_count: number; // Кол-во форков
   updated_at: string; // Дата обновления
   owner: {
-    login: string; // логин владельца
+    login: string; // Логин владельца
   };
   license: {
-    name: string; // название лицензии
+    name: string; // Название лицензии
   } | null;
   score?: number;
-  topics?: string[]; //массив топиков
+  topics?: string[]; //Массив топиков
 }
 
 /**
