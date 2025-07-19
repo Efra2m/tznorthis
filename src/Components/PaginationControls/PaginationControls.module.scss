@@ -1,0 +1,101 @@
+.paginationContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 20px;
+  padding: 8px 20px;
+  border-radius: 4px;
+  gap: 25px;
+
+  @media (min-width: 1024px) {
+    gap: 25px;
+    padding: 8px 20px;
+  }
+
+  @media (max-width: 1023px) and (min-width: 768px) {
+    gap: 15px;
+    padding: 8px 15px;
+  }
+
+  @media (max-width: 767px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 8px 10px;
+    height: auto;
+    margin-top: 15px;
+  }
+}
+
+.rowsPerPage {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  @media (max-width: 767px) {
+    order: 1;
+    margin-right: auto;
+  }
+}
+
+.rowsPerPageText {
+  color: #666;
+  font-size: 0.875rem;
+
+  @media (max-width: 767px) {
+    font-size: 0.75rem;
+  }
+}
+
+.rowsSelect {
+  padding: 0;
+  font-size: 0.875rem;
+  margin-top: 6px;
+
+  @media (max-width: 767px) {
+    font-size: 0.75rem;
+  }
+}
+
+.pageInfo {
+  color: #666;
+  font-size: 0.875rem;
+  margin: 0 16px;
+  @media (max-width: 767px) {
+    order: 3;
+    width: 100%;
+    text-align: center;
+    margin: 5px 0;
+    font-size: 0.75rem;
+  }
+
+  @media (max-width: 1023px) and (min-width: 768px) {
+    margin: 0 10px;
+    font-size: 0.8125rem;
+  }
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 767px) {
+    order: 2;
+  }
+}
+
+.paginationArrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  font-size: 1rem;
+  color: #1976d2;
+
+  @media (max-width: 767px) {
+    width: 20px;
+    height: 20px;
+    font-size: 0.875rem;
+  }
+}
