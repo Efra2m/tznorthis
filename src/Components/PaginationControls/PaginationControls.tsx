@@ -15,7 +15,7 @@ interface PaginationControlsProps {
   rowsPerPage: number; // Кол-во строк на странице
   totalCount: number; // Общее кол-во элементов
   onPageChange: (newPage: number) => void; // Обработчик смены страницы
-  onRowsPerPageChange: (value: number) => void; // Обработчик изменения количества строк
+  onRowsPerPageChange: (value: number) => void; // Обработчик изменения кол-ва строк
 }
 /**
  * Компонент управления пагинацией
